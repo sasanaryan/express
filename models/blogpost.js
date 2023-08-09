@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const PostSchema = new mongoose.Schema(
+const BlogpostSchema = new mongoose.Schema(
   {
     title: { type: String },
     body: { type: String },
@@ -8,4 +8,4 @@ const PostSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Cart", PostSchema);
+module.exports = mongoose.model("Cart", BlogpostSchema);
