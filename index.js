@@ -15,7 +15,7 @@ app.use(
 );
 app.use(bodyParser.json());
 
-var allowlist = ["http://localhost:8911"];
+var allowlist = ["http://localhost:8910", "http://localhost:8911"];
 var corsOptionsDelegate = function (req, callback) {
   var corsOptions;
   if (allowlist.indexOf(req.header("Origin")) !== -1) {
